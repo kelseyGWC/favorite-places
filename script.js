@@ -135,9 +135,6 @@ function isFood(myCategories) {
 function isOutdoors(myCategories) {
 	return /outdoors/i.test(myCategories);
 };
-function getCategories(myCategories) {
-	return "city: " + /city/i.test(myCategories) + ", education: " + /education/i.test(myCategories) + ", entertainment: " + /entertainment/i.test(myCategories) + ", food: " + /food/i.test(myCategories) + ", outdoors: " + /outdoors/i.test(myCategories);
-};
 
 $(document).ready(function() {
 	$("#city").click(myFilter);
@@ -161,7 +158,7 @@ function myFilter() {
 		if ($("#food").prop("checked") && !(marker.categories.food)) {
 			return false;
 		}
-		if ($("#outdoors").prop("checked") && !(marker.categories.food)) {
+		if ($("#outdoors").prop("checked") && !(marker.categories.outdoors)) {
 			return false;
 		}
 		return true;
