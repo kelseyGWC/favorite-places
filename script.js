@@ -57,9 +57,9 @@ function getDescription(myData) {
 	if (myData["imageurl"] !== "") {
 		description += "<img width='200px' src='" + myData["imageurl"] + "'><br>";
 	}
-	description += myData["description"];
+	description += myData["description"] + "<br>";
 	if (myData["yourname"] !== "") {
-		description += "<br><em>Added by " + myData["yourname"] + "</em>";
+		description += "<em>Added by " + myData["yourname"] + "</em>";
 	}
 	return description;
 };
