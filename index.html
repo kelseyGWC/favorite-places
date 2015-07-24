@@ -21,7 +21,7 @@
 	<style>
 		body { margin:0; padding:0; }
 		h1 { font-weight: bold; font-family: "Segoe Script", cursive; font-size: 400%; }
-		a { font-size: 20px; float: right; margin: 0.5em 0em 0.5em 0em; }
+		#link { font-size: 20px; }
 		#container { position:relative; margin: 0px auto; width: 80%; padding-bottom: 50px; }
 		#categories { border: 1px solid black; margin-bottom: 1em; padding: 1em; float: left; }
 		#map { position:relative; height: 500px; width: 100%; }
@@ -33,6 +33,7 @@
 	<!-- page header and map -->
 	<div id='container'>
 		<h1>Our Favorite Places</h1>
+		<a id="link" href="http://goo.gl/forms/aDEDY5NAuR" target="_blank">Add a marker to our map by filling out this form!</a><br>
 		<div id="categories">
 		<input type="checkbox" id="city">City or Town
 		<input type="checkbox" id="education">Education
@@ -40,7 +41,6 @@
 		<input type="checkbox" id="food">Food or Beverage
 		<input type="checkbox" id="outdoors">Outdoors
 		</div>
-		<a href="http://goo.gl/forms/aDEDY5NAuR" target="_blank">Add a marker to our map by filling out this form!</a>
 		<div id='map'></div>
 	</div>
 	
